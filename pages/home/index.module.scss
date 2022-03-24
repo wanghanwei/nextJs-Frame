@@ -1,0 +1,85 @@
+@import 'styles/theme.scss';
+
+.shopList {
+	padding-left: rem(30px);
+	.list {
+		padding: rem(26px) rem(30px) rem(30px) 0;
+		border-bottom: rem(1px) solid $border-color-5;
+		&:last-child {
+			border-bottom: none;
+		}
+		.listImg {
+			width: rem(188px);
+			height: rem(188px);
+			border: rem(7px) solid $primary-color-7;
+			> img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.listTxt {
+			display: flex;
+			flex-direction: column;
+			min-height: rem(188px);
+			justify-content: space-between;
+			> h3 {
+				font-size: rem(30px);
+				color: $text-color-1;
+				line-height: rem(40px);
+			}
+			> p {
+				font-size: rem(24px);
+				color: $text-color-3;
+				line-height: rem(36px);
+				padding: rem(6px) 0;
+				text-overflow: -o-ellipsis-lastline;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				line-clamp: 2;
+				-webkit-box-orient: vertical;
+			}
+			.listPrice {
+				font-size: rem(24px);
+				color: $text-color-3;
+				line-height: rem(48px);
+				display: flex;
+				justify-content: space-between;
+				// align-items: center;
+				.redColor {
+					font-size: rem(28px);
+					color: $primary-color-1;
+					font-weight: bold;
+				}
+				.price {
+					font-family: 'Akrobat';
+					font-size: rem(48px);
+					font-weight: bold;
+					padding: 0 rem(4px);
+				}
+				.listBtn {
+					width: rem(134px);
+					height: rem(48px);
+					line-height: rem(48px);
+					color: $white;
+					text-align: center;
+					font-size: rem(24px);
+					font-weight: 500;
+					border: none;
+					&::before {
+						display: none;
+					}
+				}
+			}
+		}
+		:global {
+			.am-flexbox-item {
+				&:first-child {
+					flex: 0 0 rem(188px);
+					margin-right: rem(20px);
+				}
+			}
+		}
+	}
+}

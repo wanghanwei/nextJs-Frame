@@ -1,0 +1,5 @@
+{
+  "swaggerUrl": "https://greatlife.insclouds.com/api/v2/api-docs?group=V.1.1.All",
+  "output": "./services",
+  "forceOverwrite": true
+}
